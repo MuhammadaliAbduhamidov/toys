@@ -64,3 +64,203 @@
   background: transparent;
   cursor: pointer;
 }
+
+/* intro */
+.intro {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.wrapper .slick-next {
+  right: -50px !important;
+  width: 30px !important;
+  background-image: url(./images/arrowNext.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper .slick-prev {
+  left: -50px !important;
+  width: 30px !important;
+  background-image: url(./images/arrowPrev.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper .slick-next:before,
+.slick-prev:before {
+  content: "";
+}
+.intro-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 68px;
+  color: #ffffff;
+}
+.intro-btn {
+  display: flex;
+  width: 160px;
+  align-items: center;
+  gap: 14px;
+  background: #5fceff;
+  border-radius: 10px;
+  padding: 10px 33px;
+  cursor: pointer;
+  margin-top: 47px;
+}
+.intro-btn button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+.intro-bg {
+  background: #ffa723;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.download {
+  width: 186px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px 30px;
+  cursor: pointer;
+  position: absolute;
+  top: -25px;
+}
+.download:hover {
+  transform: scale(0.95);
+}
+.download button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.69px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: #049fe3;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Products */
+.products {
+  padding-top: 90px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.text span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffbf60;
+}
+.text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #05a1e4;
+  padding: 7px 0;
+}
+.text .bottom {
+  border: 2px solid #ffbf60;
+  width: 56px;
+  height: 0px;
+}
+.products .swiper {
+  padding: 0 50px;
+}
+.product-img {
+  background: #f6f6f7;
+  border-radius: 17.2222px;
+  padding: 35px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.product-img img {
+  width: 100%;
+}
+.product-img:hover {
+  border: 1px solid #ffa723;
+}
+
+/* About */
+.about {
+  background: #f9fdff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 170px 150px 100px;
+  margin-top: 150px;
+}
+.about .text {
+  align-items: flex-start;
+  width: 320px;
+}
+.about-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.about-item {
+  background-image: url(./images/vector.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 170px 0 100px;
+  align-items: center;
+  margin-top: -220px;
+}
+.about-img img {
+  animation-name: toys;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+@keyframes toys {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.about-btn {
+  background: #ffffff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.about-btn button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffa723;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 5px;
+}
