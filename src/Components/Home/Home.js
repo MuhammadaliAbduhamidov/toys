@@ -6,6 +6,10 @@ import Products from "./Products";
 import About from "./About";
 import Numbers from "./Numbers";
 import Export from "./Export";
+import Showroom from "./Showroom";
+import Partner from "./Partner";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -18,6 +22,10 @@ function Home() {
       <About />
       <Numbers />
       <Export />
+      <Showroom />
+      <Partner />
+      <Contact />
+      <Footer />
     </>
   );
 }
