@@ -4,6 +4,8 @@ import "../../assets/home.css";
 import Intro from "./Intro";
 import Products from "./Products";
 import About from "./About";
+import Numbers from "./Numbers";
+import Export from "./Export";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       </div>
       <Products />
       <About />
+      <Numbers />
+      <Export />
     </>
   );
 }
