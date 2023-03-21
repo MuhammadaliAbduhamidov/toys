@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { Phone } from "../../assets/Svg";
 
@@ -6,29 +7,23 @@ function Navbar() {
   return (
     <div className="container">
       <div className="navbar">
-        <div className="logo">
-          <img src={logo} alt="" />
-        </div>
+        <NavLink to={"/"}>
+          <div className="logo">
+            <img src={logo} alt="" />
+          </div>
+        </NavLink>
         <nav>
           <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Products</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Showroom</a>
-            </li>
-            <li>
-              <a href="#">Partner</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <NavLink to={"/"}>
+              <li>Home</li>
+            </NavLink>
+            <NavLink to={"/product"}>
+              <li>Products</li>
+            </NavLink>
+            <li>About</li>
+            <li>Showroom</li>
+            <li>Partner</li>
+            <li>Contact</li>
           </ul>
           <select name="" id="">
             <option value="1">EN</option>

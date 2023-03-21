@@ -4,6 +4,7 @@ import { Navigation, A11y } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import axios from "axios";
 import { API_URL } from "../../config";
+import { NavLink } from "react-router-dom";
 
 function Products() {
   const [data, setData] = useState([]);
@@ -20,7 +21,6 @@ function Products() {
     }
   }, []);
 
-  console.log(data);
   return (
     <div className="container">
       <div className="products">
@@ -37,13 +37,15 @@ function Products() {
         >
           {data.data?.map((item) => {
             return (
-              <SwiperSlide>
-                <div className="product-img" key={item.id}>
-                  <img
-                    src={`https://api.dev.therepublicoftoys.uz${item.img1}`}
-                    alt=""
-                  />
-                </div>
+              <SwiperSlide key={item.id}>
+                <NavLink to={"/product"}>
+                  <div className="product-img">
+                    <img
+                      src={`https://api.dev.therepublicoftoys.uz${item.img1}`}
+                      alt=""
+                    />
+                  </div>
+                </NavLink>
               </SwiperSlide>
             );
           })}

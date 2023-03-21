@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import { partner } from "./Mock";
+import { partner } from "../Mock";
 
 function Partner() {
   return (
@@ -23,8 +23,8 @@ function Partner() {
         >
           {partner.map((item) => {
             return (
-              <SwiperSlide>
-                <div className="partner-img" key={item.id}>
+              <SwiperSlide key={item.id}>
+                <div className="partner-img">
                   <img src={item.img} alt="" />
                 </div>
               </SwiperSlide>

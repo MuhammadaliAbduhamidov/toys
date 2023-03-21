@@ -1,5 +1,5 @@
 import React from "react";
-import { card } from "./Mock";
+import { card } from "../Mock";
 
 function Numbers() {
   return (

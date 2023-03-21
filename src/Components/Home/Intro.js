@@ -4,6 +4,7 @@ import { ArrowNext, Download } from "../../assets/Svg";
 import ekskavator from "../../assets/images/ekskavator.png";
 import skuter from "../../assets/images/skuter.png";
 import uycha from "../../assets/images/uycha.png";
+import { NavLink } from "react-router-dom";
 
 function Intro() {
   const settings = {
@@ -22,10 +23,12 @@ function Intro() {
           <div className="intro">
             <div className="intro-text">
               <h1>Enjoy with our products</h1>
-              <div className="intro-btn">
-                <button>See more</button>
-                <ArrowNext />
-              </div>
+              <NavLink to={"/product"}>
+                <div className="intro-btn">
+                  <button>See more</button>
+                  <ArrowNext />
+                </div>
+              </NavLink>
             </div>
             <div className="intro-img">
               <img src={skuter} alt="" />

@@ -23,7 +23,7 @@
   gap: 45px;
   list-style: none;
 }
-.navbar nav ul li a {
+.navbar nav ul li {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -193,6 +193,7 @@
   padding: 35px;
   cursor: pointer;
   border: 1px solid transparent;
+  height: 270px;
 }
 .product-img img {
   width: 100%;
