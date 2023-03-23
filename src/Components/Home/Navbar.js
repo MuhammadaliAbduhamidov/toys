@@ -20,7 +20,9 @@ function Navbar() {
             <NavLink to={"/product"}>
               <li>Products</li>
             </NavLink>
-            <li>About</li>
+            <NavLink to={"/about"}>
+              <li>About</li>
+            </NavLink>
             <li>Showroom</li>
             <li>Partner</li>
             <li>Contact</li>

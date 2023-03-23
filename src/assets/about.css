@@ -1,0 +1,35 @@
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  padding: 88px 0 140px;
+}
+.about-txt h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #05a1e4;
+}
+.about-txt p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+  color: #666666;
+  padding-top: 60px;
+}
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  margin-top: 50px;
+}
+.about-images img {
+  width: 100%;
+}
+.about-images img:nth-child(2),
+.about-images img:nth-child(4) {
+  margin-top: 50px;
+}

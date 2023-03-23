@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import toys from "../../assets/images/toys.png";
 import { AboutNext } from "../../assets/Svg";
 
@@ -28,10 +29,12 @@ function About() {
             adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
             magna fringilla urna, porttitor.{" "}
           </p>
-          <div className="about-btn">
-            <button>подробнее</button>
-            <AboutNext />
-          </div>
+          <NavLink to={"/about"}>
+            <div className="about-btn">
+              <button>подробнее</button>
+              <AboutNext />
+            </div>
+          </NavLink>
         </div>
       </div>
     </>
