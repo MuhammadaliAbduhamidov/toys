@@ -1,0 +1,121 @@
+.carusel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px;
+  padding-top: 77px;
+}
+.carusel-img {
+  background: #f6f6f7;
+  border-radius: 18.5625px;
+  padding: 50px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.carusel-img img {
+  width: 100%;
+}
+.carusel .carousel.carousel-slider .control-arrow {
+  font-size: 0;
+  padding: 0;
+}
+.carusel .carousel.carousel-slider .control-arrow:before {
+  content: none;
+}
+.carusel .carousel .carousel-status {
+  font-size: 0px;
+}
+.carusel .carousel .control-dots {
+  z-index: -1 !important;
+}
+.carusel .carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: 0px solid #333;
+}
+.carusel .carousel .thumb {
+  width: 80% !important;
+  background: #f6f6f7;
+  border-radius: 10.8839px;
+  margin: 20px 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  height: 190px;
+}
+.carusel .carousel .thumbs-wrapper {
+  margin: 0 !important;
+}
+.carusel .carousel-root {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.carusel-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #666666;
+}
+table {
+  width: 100%;
+  padding-top: 30px;
+}
+table tbody tr td {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+table tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+}
+table tbody tr:nth-child(odd) {
+  background: #f6f6f7;
+}
+table tbody tr td span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+table tbody tr td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #929292;
+}
+table tbody tr td button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: #ffffff;
+  padding: 2px 16px;
+  background: #10aaee;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.carusel-text > button {
+  background: #ffa723;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 14px 48px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.carusel button:hover {
+  transform: scale(0.9);
+}

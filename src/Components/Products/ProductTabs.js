@@ -1,11 +1,12 @@
 import axios from "axios";
-import "../../assets/productPage.css";
 import React, { useState, useEffect } from "react";
 import "react-loading-skeleton/dist/skeleton.css";
 import { API_URL } from "../../config";
 import { productTabs } from "../Mock";
 import { AboutNext } from "../../assets/Svg";
 import CardSkeleton from "../CardSkeleton";
+import { NavLink } from "react-router-dom";
+import Modal from "./Modal";
 
 function ProductTabs() {
   const [dates, setDates] = useState([]);
@@ -17,7 +18,6 @@ function ProductTabs() {
     setSelectedCategory(category);
     setActive(id);
   };
-  console.log(dates);
 
   useEffect(() => {
     return () => {
@@ -70,20 +70,22 @@ function ProductTabs() {
                 .filter((data) => data.type == selectedCategory)
                 .map((item) => {
                   return (
-                    <div className="react-panel-card" key={item.id}>
-                      <img
-                        src={`https://api.dev.therepublicoftoys.uz${item.img1}`}
-                        alt=""
-                      />
-                      <div className="card-text">
-                        <h1>{item.title_uz}</h1>
-                        <span>{item.case_uz}</span>
+                    <NavLink to={`/product/${item.id}`} key={item.id}>
+                      <div className="react-panel-card">
+                        <img
+                          src={`https://api.dev.therepublicoftoys.uz${item.img1}`}
+                          alt=""
+                        />
+                        <div className="card-text">
+                          <h1>{item.title_uz}</h1>
+                          <span>{item.case_uz}</span>
+                        </div>
+                        <div className="card-hover">
+                          <h3>Подробнее</h3>
+                          <AboutNext />
+                        </div>
                       </div>
-                      <div className="card-hover">
-                        <h3>Подробнее</h3>
-                        <AboutNext />
-                      </div>
-                    </div>
+                    </NavLink>
                   );
                 })}
             </div>
