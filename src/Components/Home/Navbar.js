@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import { Phone } from "../../assets/Svg";
+import { Menu, Phone } from "../../assets/Svg";
 
 function Navbar() {
+  const [nav, setNav] = useState(false);
   return (
     <div className="container">
       <div className="navbar">
@@ -12,7 +13,7 @@ function Navbar() {
             <img src={logo} alt="" />
           </div>
         </NavLink>
-        <nav>
+        <nav className={nav ? "active" : ""}>
           <ul>
             <NavLink to={"/"}>
               <li>Home</li>
@@ -36,6 +37,9 @@ function Navbar() {
         <div className="navbar-btn">
           <Phone />
           <button>90 1312000</button>
+        </div>
+        <div className="menu" onClick={() => setNav(!nav)}>
+          <Menu />
         </div>
       </div>
     </div>

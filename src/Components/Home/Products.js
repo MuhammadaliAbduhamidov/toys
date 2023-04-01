@@ -34,6 +34,24 @@ function Products() {
           slidesPerView={4}
           modules={[Navigation, A11y]}
           navigation
+          breakpoints={{
+            320: {
+              width: 450,
+              slidesPerView: 1,
+            },
+            500: {
+              width: 640,
+              slidesPerView: 2,
+            },
+            768: {
+              width: 768,
+              slidesPerView: 3,
+            },
+            976: {
+              width: 976,
+              slidesPerView: 4,
+            },
+          }}
         >
           {data.data?.map((item) => {
             return (
