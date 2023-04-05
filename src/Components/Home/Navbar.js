@@ -5,6 +5,12 @@ import { Menu, Phone } from "../../assets/Svg";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  if (nav) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
   return (
     <div className="container">
       <div className="navbar">

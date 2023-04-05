@@ -17,8 +17,26 @@ function Partner() {
         <Swiper
           spaceBetween={50}
           slidesPerView={4}
-          navigation={true}
           modules={[Navigation]}
+          navigation
+          breakpoints={{
+            320: {
+              width: 450,
+              slidesPerView: 1,
+            },
+            500: {
+              width: 640,
+              slidesPerView: 2,
+            },
+            768: {
+              width: 768,
+              slidesPerView: 3,
+            },
+            976: {
+              width: 976,
+              slidesPerView: 4,
+            },
+          }}
           className="mySwiper"
         >
           {partner.map((item) => {

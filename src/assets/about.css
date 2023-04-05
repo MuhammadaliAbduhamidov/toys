@@ -33,3 +33,17 @@
 .about-images img:nth-child(4) {
   margin-top: 50px;
 }
+@media (max-width: 700px) {
+  .about-wrapper {
+    grid-template-columns: 100%;
+    padding: 50px 0 60px;
+  }
+  .about-images {
+    gap: 15px;
+    margin-top: 0;
+  }
+  .about-images img:nth-child(2),
+  .about-images img:nth-child(4) {
+    margin-top: 30px;
+  }
+}

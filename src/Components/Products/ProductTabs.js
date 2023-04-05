@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "react-loading-skeleton/dist/skeleton.css";
 import { API_URL } from "../../config";
 import { productTabs } from "../Mock";
-import { AboutNext } from "../../assets/Svg";
+import { AboutNext, Category } from "../../assets/Svg";
 import CardSkeleton from "../CardSkeleton";
 import { NavLink } from "react-router-dom";
 import Modal from "./Modal";
@@ -12,6 +12,7 @@ function ProductTabs() {
   const [dates, setDates] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [isActive, setActive] = useState(1);
+  const [isCategoryMobile, setCategoryMobile] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const selectedCategoryHandle = (category, id) => {
@@ -44,19 +45,30 @@ function ProductTabs() {
     <div className="container">
       <div className="react-tabs-wrapper">
         <div className="react-menu">
-          <h1>категория</h1>
-          <ul className="category">
+          <div className="sidebar" onClick={() => setCategoryMobile(true)}>
+            <h1>категория</h1>
+            <Category />
+          </div>
+          <ul
+            className={`category ${isCategoryMobile ? "category-mobile" : ""}`}
+          >
             {productTabs.map((item) => {
               return (
                 <li
                   key={item.id}
                   className={`lists ${isActive === item.id ? "active" : ""}`}
-                  onClick={() => selectedCategoryHandle(item.text, item.id)}
+                  onClick={() => {
+                    selectedCategoryHandle(item.text, item.id);
+                    setCategoryMobile(false);
+                  }}
                 >
                   {item.text}
                 </li>
               );
             })}
+            <div onClick={() => setCategoryMobile(false)}>
+              <Category />
+            </div>
           </ul>
         </div>
         <div className="react-panel">
