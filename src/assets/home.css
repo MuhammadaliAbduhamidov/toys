@@ -23,7 +23,8 @@
   gap: 45px;
   list-style: none;
 }
-.navbar nav ul li {
+.navbar nav ul li,
+.navbar nav ul li a {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
