@@ -16,7 +16,7 @@ function Showroom() {
   }
 
   return (
-    <div className="showroom">
+    <div className="showroom" id="showroom">
       <div className="container">
         <div className="text">
           <span>Смотрите в 360 градусе</span>

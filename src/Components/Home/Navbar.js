@@ -30,9 +30,15 @@ function Navbar() {
             <NavLink to={"/about"}>
               <li>About</li>
             </NavLink>
-            <li>Showroom</li>
-            <li>Partner</li>
-            <li>Contact</li>
+            <li>
+              <a href="#showroom">Showroom</a>
+            </li>
+            <li>
+              <a href="#partner">Partner</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
           <select name="" id="">
             <option value="1">EN</option>

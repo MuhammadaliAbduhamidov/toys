@@ -229,8 +229,8 @@ export const Menu = () => {
         x2="38"
         y2="2.6145"
         stroke="white"
-        stroke-width="4"
-        stroke-linecap="round"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
       <line
         x1="2"
@@ -238,8 +238,8 @@ export const Menu = () => {
         x2="38"
         y2="21.6145"
         stroke="white"
-        stroke-width="4"
-        stroke-linecap="round"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
       <line
         x1="10"
@@ -247,8 +247,8 @@ export const Menu = () => {
         x2="31"
         y2="11.6145"
         stroke="white"
-        stroke-width="4"
-        stroke-linecap="round"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
     </svg>
   );
@@ -266,14 +266,14 @@ export const Category = () => {
       <path
         d="M21 15L27 21.5L21 28"
         stroke="white"
-        stroke-width="2.11382"
-        stroke-linecap="round"
+        strokeWidth="2.11382"
+        strokeLinecap="round"
       />
       <path
         d="M16 15L22 21.5L16 28"
         stroke="white"
-        stroke-width="2.11382"
-        stroke-linecap="round"
+        strokeWidth="2.11382"
+        strokeLinecap="round"
       />
     </svg>
   );

@@ -3,7 +3,7 @@ import Group from "../../assets/images/Group 90.png";
 
 function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="container">
         <div className="contact-item">
           <h1>Есть вопросы? Мы вам перезвоним</h1>

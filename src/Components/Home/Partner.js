@@ -8,7 +8,7 @@ import { partner } from "../Mock";
 function Partner() {
   return (
     <div className="container">
-      <div className="partner">
+      <div className="partner" id="partner">
         <div className="text">
           <span>на доверяют</span>
           <h1>Партнеры</h1>

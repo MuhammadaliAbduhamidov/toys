@@ -150,6 +150,15 @@ table tbody tr td button {
   .carusel .carousel .thumb {
     padding: 30px !important;
   }
+  .products .react-panel-card {
+    height: auto;
+  }
+  .modal-body input {
+    padding: 15px 40px !important;
+  }
+  .modal-body button {
+    padding: 12px !important;
+  }
 }
 @media (max-width: 400px) {
   .carusel .carousel .thumb {
@@ -167,5 +176,11 @@ table tbody tr td button {
   }
   .carusel-text > button {
     padding: 10px 30px;
+  }
+  .products .react-panel-card {
+    align-items: flex-start;
+  }
+  .products .react-panel-card img {
+    width: 60%;
   }
 }
